@@ -41,6 +41,7 @@ signal regwrite : std_logic;
 signal wbsel : std_logic;
 signal memwrite : std_logic;
 signal op2sel : std_logic_vector(1 downto 0);
+signal pcsel : std_logic;
 
 component alu is
 port (alu_func : in  alu_func_t;
@@ -137,10 +138,12 @@ begin
 		op2sel <= "00";
 		memwrite <= '0';
 		wbsel <= '0';
+		
 		alu_func <= ALU_NONE;
 		
 		case opcode is
 			when OP_ITYPE =>
+			pcsel <= '0';
 				regwrite <= '1';
 				op2sel <= "01";
 				case (funct3) is
@@ -162,6 +165,7 @@ begin
                 end case;
 
 			when OP_RTYPE =>
+			pcsel <= '0';
 				regwrite <= '1';
 				case (funct3) is
 					when "000" =>
@@ -186,30 +190,38 @@ begin
 				end case;
 			
 			when OP_STORE => 
+			pcsel <= '0';
 			      memwrite <= '1';
 					op2sel <= "10";
 					alu_func <= ALU_ADD;
 			
 			when OP_BRANCH => 
 			      op2sel <= "00";
-			      if(alu_A /= alu_B) then 
-					   pc <= pc + branch_imm +4;
+					
+			      if(alu_A /= reg_B) then 
+					   pcsel <= '1';
+					  -- pc <= pc + branch_imm;
 						end if;
 
 			when others => null;
 		end case;
 			
-			if (reset = '1') then 
-			pc <= (others => '0');
-		elsif rising_edge(clk) then 
-			pc <= pc + 4;
-		end if; 
+			
     end process;
 
 	y <= alu_out;
 	
-	--acc: process(reset, clk) 
-	--begin 
+	acc: process(reset, clk) 
+	begin 
+	if (reset = '1') then 
+			pc <= (others => '0');
+		elsif rising_edge(clk) then 
+		if pcsel = '0' then
+			pc <= pc + 4;
+		elsif pcsel = '1' then 
+	     	pc <= pc + branch_imm - 4;
+			end if;
+		end if; 
 	
-	--end process; 
+	end process; 
 end architecture;

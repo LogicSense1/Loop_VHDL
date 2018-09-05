@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/common.vhd}
+# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/common.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:44 on Sep 03,2018
-# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/common.vhd 
+# Start time: 21:48:59 on Sep 05,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/common.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,12 +21,12 @@
 # -- Compiling package common
 # -- Compiling package body common
 # -- Loading package common
-# End time: 16:06:44 on Sep 03,2018, Elapsed time: 0:00:00
+# End time: 21:48:59 on Sep 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/alu.vhd}
+# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:44 on Sep 03,2018
-# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/alu.vhd 
+# Start time: 21:48:59 on Sep 05,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -34,13 +34,13 @@
 # -- Loading package common
 # -- Compiling entity alu
 # -- Compiling architecture behavioral of alu
-# End time: 16:06:44 on Sep 03,2018, Elapsed time: 0:00:00
+# End time: 21:48:59 on Sep 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd}
+# vcom -93 -work work {C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:44 on Sep 03,2018
-# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd 
+# Start time: 21:48:59 on Sep 05,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -48,12 +48,12 @@
 # -- Loading package common
 # -- Compiling entity lab5_tb
 # -- Compiling architecture behavioral of lab5_tb
-# End time: 16:06:44 on Sep 03,2018, Elapsed time: 0:00:00
+# End time: 21:48:59 on Sep 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:06:44 on Sep 03,2018
+# Start time: 21:48:59 on Sep 05,2018
 # ** Error: (vsim-3170) Could not find 'tb'.
 #         Searched libraries:
 #             C:/intelFPGA_lite/18.0/modelsim_ase/altera/vhdl/altera
@@ -62,8 +62,8 @@
 #             C:/intelFPGA_lite/18.0/modelsim_ase/altera/vhdl/altera_mf
 #             C:/intelFPGA_lite/18.0/modelsim_ase/altera/vhdl/altera_lnsim
 #             C:/intelFPGA_lite/18.0/modelsim_ase/altera/vhdl/cyclonev
-#             C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/simulation/modelsim/rtl_work
-#             C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/simulation/modelsim/rtl_work
+#             C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/simulation/modelsim/rtl_work
+#             C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/simulation/modelsim/rtl_work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution

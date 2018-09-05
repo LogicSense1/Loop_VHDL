@@ -1,14 +1,14 @@
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.lab5_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.lab5_tb 
-# Start time: 16:06:44 on Sep 03,2018
+# Start time: 21:48:59 on Sep 05,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -25,9 +25,6 @@ vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -
 add wave -position insertpoint sim:/lab5_tb/*
 add wave -position insertpoint  \
 sim:/lab5_tb/u0/dmem0/regbank0
-add wave -position insertpoint  \
-sim:/lab5_tb/u0/alu_A \
-sim:/lab5_tb/u0/reg_B
 run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
@@ -36,92 +33,91 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd failed with 2 errors.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd failed with 1 errors.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Failure: success - end of simulation
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 add wave -position insertpoint sim:/lab5_tb/u0/*
-add wave -position insertpoint sim:/lab5_tb/u0/imem0/*
-add wave -position insertpoint sim:/lab5_tb/u0/dmem0/*
 restart
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 restart
 # Loading work.common(body)
@@ -142,15 +138,91 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+restart
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd failed with 1 errors.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
+# ** Failure: success - end of simulation
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 # Compile of alu.vhd was successful.
 # Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
+# Warning in wave window restart: (vish-4014) No objects found matching '/lab5_tb/u0/pcsel'. 
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
+# ** Failure: success - end of simulation
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 restart
 # Loading work.common(body)
@@ -171,271 +243,22 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-# Warning in wave window restart: (vish-4014) No objects found matching '/lab5_tb/u0/temp'. 
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+view -new wave
+# -new not supported on PE
 add wave -position insertpoint  \
-sim:/lab5_tb/u0/rf0/regbank0
+sim:/lab5_tb/u0/pcsel
+add wave -position insertpoint  \
+sim:/lab5_tb/u0/pcsel
 restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -448,8 +271,55 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
+# Break key hit
+# Break key hit
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
+# ** Failure: success - end of simulation
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -469,30 +339,16 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -512,16 +368,16 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -534,8 +390,8 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -544,27 +400,13 @@ restart
 # Loading work.imem(behavioral)
 # Loading work.dmem(rtl)
 # Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -577,44 +419,45 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd failed with 3 errors.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd failed with 2 errors.
-# 7 compiles, 2 failed with 5 errors.
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd failed with 3 errors.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd failed with 2 errors.
-# 7 compiles, 2 failed with 5 errors.
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd failed with 3 errors.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
+#    Time: 820 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+restart
+# Loading work.common(body)
+# Loading work.lab5_tb(behavioral)
+# Loading work.lab5(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.imem(behavioral)
+# Loading work.dmem(rtl)
+# Loading work.regfile(rtl)
 # Compile of alu.vhd was successful.
 # Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd failed with 3 errors.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
 # 7 compiles, 1 failed with 3 errors.
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 1160 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 1020 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -623,13 +466,13 @@ restart
 # Loading work.imem(behavioral)
 # Loading work.dmem(rtl)
 # Loading work.regfile(rtl)
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -641,68 +484,9 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
+#    Time: 1020 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -722,34 +506,17 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
 # Compile of dmem.vhd was successful.
 # Compile of imem.vhd was successful.
 # Compile of loop.vhd was successful.
 # Compile of loop_tb.vhd was successful.
 # Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
 # 7 compiles, 0 failed with no errors.
-run -all
-# ** Failure: success - end of simulation
-#    Time: 1160 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
+run
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -758,6 +525,14 @@ restart
 # Loading work.imem(behavioral)
 # Loading work.dmem(rtl)
 # Loading work.regfile(rtl)
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of loop.vhd was successful.
+# Compile of loop_tb.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 7 compiles, 0 failed with no errors.
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -769,16 +544,8 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
+#    Time: 1020 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
 # Loading work.common(body)
 # Loading work.lab5_tb(behavioral)
@@ -787,7 +554,7 @@ restart
 # Loading work.imem(behavioral)
 # Loading work.dmem(rtl)
 # Loading work.regfile(rtl)
-run -all
+run -continue
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
@@ -798,46 +565,8 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
+#    Time: 820 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
 restart
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -850,378 +579,7 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
 # ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 25 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 35 ns  Iteration: 2  Instance: /lab5_tb/u0/imem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-run -all
-# ** Failure: success - end of simulation
-#    Time: 1160 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# Compile of dmem.vhd was successful.
-# Compile of imem.vhd was successful.
-# Compile of loop.vhd was successful.
-# Compile of loop_tb.vhd was successful.
-# Compile of regfile.vhd was successful.
-# Compile of alu.vhd was successful.
-# Compile of common.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.common(body)
-# Loading work.lab5_tb(behavioral)
-# Loading work.lab5(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.imem(behavioral)
-# Loading work.dmem(rtl)
-# Loading work.regfile(rtl)
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/rf0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/u0/dmem0
-# ** Failure: success - end of simulation
-#    Time: 580 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd
-# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/src/loop_tb.vhd line 45
-# End time: 17:35:17 on Sep 03,2018, Elapsed time: 1:28:33
-# Errors: 2, Warnings: 158
+#    Time: 820 ns  Iteration: 0  Process: /lab5_tb/proc_stimuli File: C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd
+# Break in Process proc_stimuli at C:/Users/Wentian Xia/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB5/Loop_VHDL/src/loop_tb.vhd line 45
+# End time: 22:28:20 on Sep 05,2018, Elapsed time: 0:39:21
+# Errors: 3, Warnings: 69

@@ -41,7 +41,7 @@ begin
         reset <= '1';
         wait for clk_period * 2;
         reset <= '0';
-		wait for clk_period * 56;
+		wait for clk_period * 80;
         assert false report "success - end of simulation" severity failure;
     end process;
 end architecture;
